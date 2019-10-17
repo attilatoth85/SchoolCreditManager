@@ -4,8 +4,9 @@ using System.Text;
 
 namespace ClassLibrary
 {
-    public class Subject
+    public class School
     {
-
+        public string Name { get; set; }
+        public bool Finished { get; set; }
     }
 }
