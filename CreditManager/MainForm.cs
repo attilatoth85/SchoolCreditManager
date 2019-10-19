@@ -28,8 +28,25 @@ namespace CreditManager
         private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }       
+        }
 
-        
+        private void AddSubjectButton_Click(object sender, EventArgs e)
+        {
+            addNewSubject1.Visible = true;
+        }
+
+        private void ToHome_Click(object sender, EventArgs e)
+        {
+            addNewSubject1.Visible = false;
+        }
+
+        private void SignOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+        }
+
+       
     }
 }

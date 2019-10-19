@@ -28,19 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.label1.Location = new System.Drawing.Point(182, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Add new Subject";
             // 
             // AddNewSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.label1);
             this.Name = "AddNewSubject";
-            this.Size = new System.Drawing.Size(250, 400);
+            this.Size = new System.Drawing.Size(540, 416);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }

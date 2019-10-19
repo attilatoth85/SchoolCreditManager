@@ -173,6 +173,16 @@ namespace CreditManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sent_50px {
+            get {
+                object obj = ResourceManager.GetObject("sent_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap student_female_80px {
             get {
                 object obj = ResourceManager.GetObject("student_female_80px", resourceCulture);

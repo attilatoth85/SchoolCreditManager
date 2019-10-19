@@ -41,9 +41,11 @@ namespace CreditManager
                     string[] tempArray = temp.Split(',');
 
                     for (int i = 0; i < tempArray.Length; i++)
-                    {
-                        if (UserNameTextBox.Text == tempArray[i] && PasswordTextBox.Text == tempArray[i+1])
-                        {
+                    {                       
+
+                        if (UserNameTextBox.Text == tempArray[i] && tempArray[i+1]==EasyEncryption.MD5.ComputeMD5Hash(PasswordTextBox.Text))
+                        {      
+
                             fail = false;
                             Student.UserName = UserNameTextBox.Text;
                             this.Hide();
@@ -65,13 +67,18 @@ namespace CreditManager
             if (String.IsNullOrEmpty(UserNameTextBox.Text) || String.IsNullOrEmpty(PasswordTextBox.Text)) { MessageBox.Show("Not filled right! Please try again.", "Sign in to School Credit Manager"); }
             else
             {
+                string inputPswText = PasswordTextBox.Text;
+                var calculateHash = EasyEncryption.MD5.ComputeMD5Hash(inputPswText);
+
                 FileStream stream = new FileStream(LoginClass.FilePath, FileMode.Append, FileAccess.Write, FileShare.None);
                 using (StreamWriter writer = new StreamWriter(stream))
                 {
                     writer.Write("," + UserNameTextBox.Text);
-                    writer.Write("," + PasswordTextBox.Text);
+                    writer.Write("," + calculateHash);
                 }
             }
         }
+
+        
     }
 }
