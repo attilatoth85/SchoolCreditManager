@@ -8,8 +8,11 @@ namespace ClassLibrary
     {
         public string SubjectName { get; set; }
         public int Semester { get; set; }
+        public string CurrentType { get; set; }
         public int Credit { get; set; }
-        public bool Passed { get; set; }
+        public bool Pass { get; set; }
+        private enum Types { required, specialist, optional }
+        public string UserName { get; set; }
 
     }
 }

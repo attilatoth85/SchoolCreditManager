@@ -62,15 +62,31 @@ namespace CreditManager
 
 
         private void RegisterButton_Click(object sender, EventArgs e)
-        { 
+        {
+            
+            using (StreamReader reader = new StreamReader(LoginClass.FilePath))
+            {
+                string temp = reader.ReadLine();
+                string[] tempArray = temp.Split(',');
+                for (int i = 0; i < tempArray.Length; i++)
+                {
+                    if (tempArray[i] == UserNameTextBox.Text)
+                    {
+                        MessageBox.Show("This username is used", "Sign in to School Credit Manager");
+                        break;
+                    }
+                    i += 2;
+                }
+            }
 
             if (String.IsNullOrEmpty(UserNameTextBox.Text) || String.IsNullOrEmpty(PasswordTextBox.Text)) { MessageBox.Show("Not filled right! Please try again.", "Sign in to School Credit Manager"); }
             else
             {
-                string inputPswText = PasswordTextBox.Text;
-                var calculateHash = EasyEncryption.MD5.ComputeMD5Hash(inputPswText);
-
                 FileStream stream = new FileStream(LoginClass.FilePath, FileMode.Append, FileAccess.Write, FileShare.None);
+
+                string inputPswText = PasswordTextBox.Text;
+                string calculateHash = EasyEncryption.MD5.ComputeMD5Hash(inputPswText);
+
                 using (StreamWriter writer = new StreamWriter(stream))
                 {
                     writer.Write("," + UserNameTextBox.Text);

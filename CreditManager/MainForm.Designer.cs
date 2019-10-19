@@ -62,10 +62,10 @@
             this.bunifuGradientPanel1.Controls.Add(this.panel2);
             this.bunifuGradientPanel1.Controls.Add(this.panel1);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.WhiteSmoke;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.WhiteSmoke;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.WhiteSmoke;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.WhiteSmoke;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
@@ -75,13 +75,13 @@
             // SignOut
             // 
             this.SignOut.AutoSize = true;
-            this.SignOut.BackColor = System.Drawing.Color.Transparent;
+            this.SignOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.SignOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SignOut.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.SignOut.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.SignOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.SignOut.Location = new System.Drawing.Point(641, 42);
             this.SignOut.Name = "SignOut";
-            this.SignOut.Size = new System.Drawing.Size(46, 15);
+            this.SignOut.Size = new System.Drawing.Size(46, 14);
             this.SignOut.TabIndex = 11;
             this.SignOut.Text = "Sign out";
             this.SignOut.Click += new System.EventHandler(this.SignOut_Click);
@@ -96,9 +96,9 @@
             this.panel2.Controls.Add(this.AddSubjectButton);
             this.panel2.Controls.Add(this.bunifuFlatButton1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 33);
+            this.panel2.Location = new System.Drawing.Point(0, 30);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(160, 417);
+            this.panel2.Size = new System.Drawing.Size(160, 420);
             this.panel2.TabIndex = 7;
             // 
             // WelcomeLabel
@@ -166,7 +166,7 @@
             this.ToHome.BackColor = System.Drawing.Color.Transparent;
             this.ToHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ToHome.Image = global::CreditManager.Properties.Resources.home_32px;
-            this.ToHome.Location = new System.Drawing.Point(131, 395);
+            this.ToHome.Location = new System.Drawing.Point(0, 6);
             this.ToHome.Name = "ToHome";
             this.ToHome.Size = new System.Drawing.Size(23, 19);
             this.ToHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -255,7 +255,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(700, 33);
+            this.panel1.Size = new System.Drawing.Size(700, 30);
             this.panel1.TabIndex = 6;
             // 
             // Minimize
@@ -298,8 +298,8 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CreditManager.Properties.Resources.student_female_80px;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Image = global::CreditManager.Properties.Resources.student_center_30px;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(29, 29);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -308,10 +308,10 @@
             // 
             // addNewSubject1
             // 
-            this.addNewSubject1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.addNewSubject1.Location = new System.Drawing.Point(160, 34);
+            this.addNewSubject1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.addNewSubject1.Location = new System.Drawing.Point(160, 30);
             this.addNewSubject1.Name = "addNewSubject1";
-            this.addNewSubject1.Size = new System.Drawing.Size(540, 416);
+            this.addNewSubject1.Size = new System.Drawing.Size(540, 420);
             this.addNewSubject1.TabIndex = 8;
             this.addNewSubject1.Visible = false;
             // 
@@ -322,6 +322,7 @@
             this.ClientSize = new System.Drawing.Size(700, 450);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(1610, 380);
             this.Name = "MainForm";
             this.Opacity = 0.95D;

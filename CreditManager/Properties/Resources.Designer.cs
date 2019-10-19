@@ -133,16 +133,6 @@ namespace CreditManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap information_24px {
-            get {
-                object obj = ResourceManager.GetObject("information_24px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap lock_2_50px {
             get {
                 object obj = ResourceManager.GetObject("lock_2_50px", resourceCulture);
@@ -163,16 +153,6 @@ namespace CreditManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap paper_plane_40px {
-            get {
-                object obj = ResourceManager.GetObject("paper_plane_40px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap sent_50px {
             get {
                 object obj = ResourceManager.GetObject("sent_50px", resourceCulture);
@@ -183,9 +163,9 @@ namespace CreditManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap student_female_80px {
+        internal static System.Drawing.Bitmap student_center_30px {
             get {
-                object obj = ResourceManager.GetObject("student_female_80px", resourceCulture);
+                object obj = ResourceManager.GetObject("student_center_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
