@@ -12,7 +12,6 @@ namespace ClassLibrary
         public int Credit { get; set; }
         public bool Pass { get; set; }
         private enum Types { required, specialist, optional }
-        public string UserName { get; set; }
 
     }
 }

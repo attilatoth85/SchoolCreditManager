@@ -246,6 +246,7 @@
             // CreateSubjectButton
             // 
             this.CreateSubjectButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.CreateSubjectButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CreateSubjectButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateSubjectButton.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.CreateSubjectButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));

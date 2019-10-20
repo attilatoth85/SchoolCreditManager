@@ -8,11 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data.Linq;
 
 namespace CreditManager
 {
     public partial class MainForm : Form
     {
+        static SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\totha\Source\Repos\SchoolCreditManager\CreditManager\Database1.mdf;Integrated Security=True");
+        static DataContext dataContext = new DataContext(connection);
+        Table<Students> studentsDb = dataContext.GetTable<Students>();
+
         public MainForm()
         {
             InitializeComponent();            
@@ -22,6 +28,12 @@ namespace CreditManager
         private void MainForm_Load(object sender, EventArgs e)
         {
             WelcomeLabel.Text = Student.UserName + "!";
+            SetUserId();
+        }
+
+        private void SetUserId()
+        {
+            Student.UserID = (from c in studentsDb where (c.Name == Student.UserName) select c.UserID).First();
         }
 
 
