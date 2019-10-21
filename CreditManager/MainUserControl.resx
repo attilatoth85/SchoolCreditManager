@@ -117,47 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="forgot_password_16px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forgot_password_16px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sent_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sent_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="delete_sign_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete_sign_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lock_2_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lock_2_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="parliament_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\parliament_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="horizontal_line_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\horizontal_line_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gender_neutral_user_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gender_neutral_user_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bullish_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bullish_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="delete_sign_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete_sign_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bank_building_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bank_building_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="student_center_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\student_center_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="building_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\building_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

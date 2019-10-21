@@ -27,13 +27,13 @@ namespace CreditManager
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            WelcomeLabel.Text = Student.UserName + "!";
+            lblWelcomeName.Text = Student.UserName + "!";
             SetUserId();
         }
 
         private void SetUserId()
         {
-            Student.UserID = (from c in studentsDb where (c.Name == Student.UserName) select c.UserID).First();
+            Student.UserID = (from c in studentsDb where c.Name == Student.UserName select c.UserID).First();
         }
 
 
@@ -49,7 +49,9 @@ namespace CreditManager
 
         private void ToHome_Click(object sender, EventArgs e)
         {
+
             addNewSubject1.Visible = false;
+            mainUserControl1.Visible = true;
         }
 
         private void SignOut_Click(object sender, EventArgs e)

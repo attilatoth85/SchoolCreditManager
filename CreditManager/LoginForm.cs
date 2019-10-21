@@ -82,7 +82,8 @@ namespace CreditManager
                 }
             }
 
-            if ( used ||String.IsNullOrEmpty(UserNameTextBox.Text) || String.IsNullOrEmpty(PasswordTextBox.Text))
+            if ( used ||String.IsNullOrEmpty(UserNameTextBox.Text) || String.IsNullOrEmpty(PasswordTextBox.Text ) 
+                || String.IsNullOrEmpty(SchoolTextBox.Text))
                 { MessageBox.Show("Not filled right! Please try again.", "Sign in to School Credit Manager"); }
 
             else
@@ -99,10 +100,11 @@ namespace CreditManager
                 }
 
                 SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\totha\Source\Repos\SchoolCreditManager\CreditManager\Database1.mdf;Integrated Security=True");
-                SqlCommand command2 = new SqlCommand("INSERT INTO Students( Name)" +
-                " VALUES( @Name )", connection);
+                SqlCommand command2 = new SqlCommand("INSERT INTO Students( Name, School)" +
+                " VALUES( @Name, @School )", connection);
                 connection.Open();
                 command2.Parameters.AddWithValue("@Name", UserNameTextBox.Text);
+                command2.Parameters.AddWithValue("@School", SchoolTextBox.Text);
                 command2.ExecuteNonQuery();
                 connection.Close();
             }

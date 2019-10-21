@@ -63,6 +63,26 @@ namespace CreditManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bank_building_100px {
+            get {
+                object obj = ResourceManager.GetObject("bank_building_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap building_30px {
+            get {
+                object obj = ResourceManager.GetObject("building_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bullish_26px {
             get {
                 object obj = ResourceManager.GetObject("bullish_26px", resourceCulture);
@@ -146,6 +166,16 @@ namespace CreditManager.Properties {
         internal static System.Drawing.Bitmap menu_filled_50px {
             get {
                 object obj = ResourceManager.GetObject("menu_filled_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap parliament_64px {
+            get {
+                object obj = ResourceManager.GetObject("parliament_64px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -35,9 +35,13 @@
             this.SignInButton = new System.Windows.Forms.Button();
             this.RegisterButton = new System.Windows.Forms.Button();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
+            this.SchoolTextBox = new System.Windows.Forms.TextBox();
+            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,7 +53,7 @@
             this.UserNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UserNameTextBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameTextBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.UserNameTextBox.Location = new System.Drawing.Point(52, 96);
+            this.UserNameTextBox.Location = new System.Drawing.Point(50, 83);
             this.UserNameTextBox.Name = "UserNameTextBox";
             this.UserNameTextBox.Size = new System.Drawing.Size(120, 15);
             this.UserNameTextBox.TabIndex = 0;
@@ -61,7 +65,7 @@
             this.bunifuSeparator1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(17, 115);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(15, 102);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(181, 10);
             this.bunifuSeparator1.TabIndex = 9;
@@ -75,7 +79,7 @@
             this.bunifuSeparator2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(17, 173);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(15, 160);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(181, 10);
             this.bunifuSeparator2.TabIndex = 10;
@@ -89,10 +93,10 @@
             this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignInButton.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.SignInButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.SignInButton.Location = new System.Drawing.Point(17, 218);
+            this.SignInButton.Location = new System.Drawing.Point(15, 254);
             this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(180, 35);
-            this.SignInButton.TabIndex = 2;
+            this.SignInButton.Size = new System.Drawing.Size(180, 30);
+            this.SignInButton.TabIndex = 3;
             this.SignInButton.Text = "Sign in";
             this.SignInButton.UseVisualStyleBackColor = false;
             this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
@@ -103,10 +107,10 @@
             this.RegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RegisterButton.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.RegisterButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.RegisterButton.Location = new System.Drawing.Point(17, 277);
+            this.RegisterButton.Location = new System.Drawing.Point(15, 301);
             this.RegisterButton.Name = "RegisterButton";
-            this.RegisterButton.Size = new System.Drawing.Size(180, 35);
-            this.RegisterButton.TabIndex = 3;
+            this.RegisterButton.Size = new System.Drawing.Size(180, 30);
+            this.RegisterButton.TabIndex = 4;
             this.RegisterButton.Text = "Register";
             this.RegisterButton.UseVisualStyleBackColor = false;
             this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
@@ -117,17 +121,53 @@
             this.PasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PasswordTextBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.PasswordTextBox.Location = new System.Drawing.Point(52, 158);
+            this.PasswordTextBox.Location = new System.Drawing.Point(50, 145);
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.PasswordChar = '*';
             this.PasswordTextBox.Size = new System.Drawing.Size(120, 15);
             this.PasswordTextBox.TabIndex = 1;
             this.PasswordTextBox.Tag = "";
             // 
+            // SchoolTextBox
+            // 
+            this.SchoolTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.SchoolTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SchoolTextBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SchoolTextBox.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.SchoolTextBox.Location = new System.Drawing.Point(50, 203);
+            this.SchoolTextBox.Name = "SchoolTextBox";
+            this.SchoolTextBox.Size = new System.Drawing.Size(120, 15);
+            this.SchoolTextBox.TabIndex = 2;
+            this.SchoolTextBox.Tag = "";
+            // 
+            // bunifuSeparator3
+            // 
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.bunifuSeparator3.LineThickness = 1;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(15, 218);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(181, 10);
+            this.bunifuSeparator3.TabIndex = 13;
+            this.bunifuSeparator3.TabStop = false;
+            this.bunifuSeparator3.Transparency = 255;
+            this.bunifuSeparator3.Vertical = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::CreditManager.Properties.Resources.building_30px;
+            this.pictureBox3.Location = new System.Drawing.Point(19, 198);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::CreditManager.Properties.Resources.sent_50px;
-            this.pictureBox4.Location = new System.Drawing.Point(88, 22);
+            this.pictureBox4.Location = new System.Drawing.Point(85, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(40, 40);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -137,7 +177,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::CreditManager.Properties.Resources.lock_2_50px;
-            this.pictureBox2.Location = new System.Drawing.Point(21, 153);
+            this.pictureBox2.Location = new System.Drawing.Point(19, 140);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -147,7 +187,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CreditManager.Properties.Resources.gender_neutral_user_32px;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 96);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 83);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -160,6 +200,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(220, 350);
+            this.Controls.Add(this.SchoolTextBox);
+            this.Controls.Add(this.bunifuSeparator3);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.PasswordTextBox);
             this.Controls.Add(this.RegisterButton);
             this.Controls.Add(this.SignInButton);
@@ -174,6 +217,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -193,5 +237,8 @@
         private System.Windows.Forms.Button SignInButton;
         private System.Windows.Forms.Button RegisterButton;
         private System.Windows.Forms.TextBox PasswordTextBox;
+        private System.Windows.Forms.TextBox SchoolTextBox;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

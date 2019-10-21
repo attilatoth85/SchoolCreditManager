@@ -9,5 +9,7 @@ namespace ClassLibrary
         public int UserID;
         [Column]
         public string Name;
+        [Column]
+        public string School;
     }
 }

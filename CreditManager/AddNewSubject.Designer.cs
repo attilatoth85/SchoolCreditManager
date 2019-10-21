@@ -45,6 +45,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.CreateSubjectButton = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.SubjectGradeTextBox = new System.Windows.Forms.TextBox();
+            this.bunifuSeparator5 = new Bunifu.Framework.UI.BunifuSeparator();
             this.SuspendLayout();
             // 
             // label1
@@ -258,11 +261,51 @@
             this.CreateSubjectButton.UseVisualStyleBackColor = false;
             this.CreateSubjectButton.Click += new System.EventHandler(this.CreateSubjectButton_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.Location = new System.Drawing.Point(115, 326);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(48, 17);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Grade";
+            // 
+            // SubjectGradeTextBox
+            // 
+            this.SubjectGradeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.SubjectGradeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SubjectGradeTextBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubjectGradeTextBox.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.SubjectGradeTextBox.Location = new System.Drawing.Point(197, 326);
+            this.SubjectGradeTextBox.Name = "SubjectGradeTextBox";
+            this.SubjectGradeTextBox.Size = new System.Drawing.Size(150, 15);
+            this.SubjectGradeTextBox.TabIndex = 28;
+            this.SubjectGradeTextBox.Tag = "";
+            // 
+            // bunifuSeparator5
+            // 
+            this.bunifuSeparator5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.bunifuSeparator5.LineThickness = 1;
+            this.bunifuSeparator5.Location = new System.Drawing.Point(115, 344);
+            this.bunifuSeparator5.Name = "bunifuSeparator5";
+            this.bunifuSeparator5.Size = new System.Drawing.Size(250, 2);
+            this.bunifuSeparator5.TabIndex = 29;
+            this.bunifuSeparator5.TabStop = false;
+            this.bunifuSeparator5.Transparency = 255;
+            this.bunifuSeparator5.Vertical = false;
+            // 
             // AddNewSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.SubjectGradeTextBox);
+            this.Controls.Add(this.bunifuSeparator5);
             this.Controls.Add(this.CreateSubjectButton);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -306,5 +349,8 @@
         public System.Windows.Forms.TextBox SubjectCreditTextBox;
         public System.Windows.Forms.TextBox SubjectTypeTextBox;
         public System.Windows.Forms.TextBox SubjectPassTextBox;
+        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TextBox SubjectGradeTextBox;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator5;
     }
 }

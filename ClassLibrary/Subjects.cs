@@ -6,7 +6,7 @@ using System.Text;
 namespace ClassLibrary
 {
     [Table]
-    class Subjects
+    public class Subjects
     {
         [Column]
         public string SubjectName;
@@ -17,11 +17,12 @@ namespace ClassLibrary
         [Column]
         public int Credit;
         [Column]
-        public string Pass;
+        public string Pass;        
         [Column]
         public int UserID;
         [Column]
         public int SubjectID;
-
+        [Column]
+        public int Grade;
     }
 }

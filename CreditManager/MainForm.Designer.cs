@@ -30,9 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.mainUserControl1 = new CreditManager.MainUserControl();
             this.SignOut = new System.Windows.Forms.Label();
+            this.addNewSubject1 = new CreditManager.AddNewSubject();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.WelcomeLabel = new System.Windows.Forms.Label();
+            this.lblWelcomeName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ToHome = new System.Windows.Forms.PictureBox();
@@ -43,7 +45,6 @@
             this.Exit = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.addNewSubject1 = new CreditManager.AddNewSubject();
             this.bunifuGradientPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ToHome)).BeginInit();
@@ -57,6 +58,7 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.mainUserControl1);
             this.bunifuGradientPanel1.Controls.Add(this.SignOut);
             this.bunifuGradientPanel1.Controls.Add(this.addNewSubject1);
             this.bunifuGradientPanel1.Controls.Add(this.panel2);
@@ -72,6 +74,14 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(700, 450);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
+            // mainUserControl1
+            // 
+            this.mainUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.mainUserControl1.Location = new System.Drawing.Point(160, 33);
+            this.mainUserControl1.Name = "mainUserControl1";
+            this.mainUserControl1.Size = new System.Drawing.Size(540, 417);
+            this.mainUserControl1.TabIndex = 12;
+            // 
             // SignOut
             // 
             this.SignOut.AutoSize = true;
@@ -86,10 +96,19 @@
             this.SignOut.Text = "Sign out";
             this.SignOut.Click += new System.EventHandler(this.SignOut_Click);
             // 
+            // addNewSubject1
+            // 
+            this.addNewSubject1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.addNewSubject1.Location = new System.Drawing.Point(160, 30);
+            this.addNewSubject1.Name = "addNewSubject1";
+            this.addNewSubject1.Size = new System.Drawing.Size(540, 420);
+            this.addNewSubject1.TabIndex = 8;
+            this.addNewSubject1.Visible = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.panel2.Controls.Add(this.WelcomeLabel);
+            this.panel2.Controls.Add(this.lblWelcomeName);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.bunifuFlatButton3);
             this.panel2.Controls.Add(this.ToHome);
@@ -101,18 +120,18 @@
             this.panel2.Size = new System.Drawing.Size(160, 420);
             this.panel2.TabIndex = 7;
             // 
-            // WelcomeLabel
+            // lblWelcomeName
             // 
-            this.WelcomeLabel.AutoSize = true;
-            this.WelcomeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.WelcomeLabel.Font = new System.Drawing.Font("Arial Narrow", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.WelcomeLabel.ForeColor = System.Drawing.Color.Gainsboro;
-            this.WelcomeLabel.Location = new System.Drawing.Point(100, 35);
-            this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(53, 23);
-            this.WelcomeLabel.TabIndex = 11;
-            this.WelcomeLabel.Text = "Name";
-            this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblWelcomeName.AutoSize = true;
+            this.lblWelcomeName.BackColor = System.Drawing.Color.Transparent;
+            this.lblWelcomeName.Font = new System.Drawing.Font("Arial Narrow", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblWelcomeName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblWelcomeName.Location = new System.Drawing.Point(100, 35);
+            this.lblWelcomeName.Name = "lblWelcomeName";
+            this.lblWelcomeName.Size = new System.Drawing.Size(53, 23);
+            this.lblWelcomeName.TabIndex = 11;
+            this.lblWelcomeName.Text = "Name";
+            this.lblWelcomeName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
@@ -154,7 +173,7 @@
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(159, 30);
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(162, 30);
             this.bunifuFlatButton3.TabIndex = 8;
             this.bunifuFlatButton3.Text = "Diagram";
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -196,13 +215,13 @@
             this.AddSubjectButton.IconVisible = true;
             this.AddSubjectButton.IconZoom = 40D;
             this.AddSubjectButton.IsTab = false;
-            this.AddSubjectButton.Location = new System.Drawing.Point(-2, 152);
+            this.AddSubjectButton.Location = new System.Drawing.Point(-2, 286);
             this.AddSubjectButton.Name = "AddSubjectButton";
             this.AddSubjectButton.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.AddSubjectButton.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.AddSubjectButton.OnHoverTextColor = System.Drawing.Color.WhiteSmoke;
             this.AddSubjectButton.selected = false;
-            this.AddSubjectButton.Size = new System.Drawing.Size(159, 30);
+            this.AddSubjectButton.Size = new System.Drawing.Size(162, 30);
             this.AddSubjectButton.TabIndex = 7;
             this.AddSubjectButton.Text = "Add new Subject";
             this.AddSubjectButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -306,15 +325,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // addNewSubject1
-            // 
-            this.addNewSubject1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.addNewSubject1.Location = new System.Drawing.Point(160, 30);
-            this.addNewSubject1.Name = "addNewSubject1";
-            this.addNewSubject1.Size = new System.Drawing.Size(540, 420);
-            this.addNewSubject1.TabIndex = 8;
-            this.addNewSubject1.Visible = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,10 +366,11 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
         private Bunifu.Framework.UI.BunifuFlatButton AddSubjectButton;
-        private System.Windows.Forms.Label WelcomeLabel;
+        private System.Windows.Forms.Label lblWelcomeName;
         private System.Windows.Forms.Label label2;
         private AddNewSubject addNewSubject1;
         private System.Windows.Forms.Label SignOut;
+        private MainUserControl mainUserControl1;
     }
 }
 

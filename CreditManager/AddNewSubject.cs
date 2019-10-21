@@ -37,16 +37,19 @@ namespace CreditManager
                 CurrentType = SubjectTypeTextBox.Text,
                 Credit = int.Parse(SubjectCreditTextBox.Text),
                 Pass = bool.Parse(SubjectPassTextBox.Text),
+                Grade= int.Parse(SubjectGradeTextBox.Text)
             };
 
-            SqlCommand command = new SqlCommand("INSERT INTO Subjects(SubjectName, Semester, CurrentType, Credit, Pass, UserID)" + 
-                " VALUES( @SubjectName, @Semester, @CurrentType, @Credit, @Pass, @UserID)", connection);
+            SqlCommand command = new SqlCommand("INSERT INTO Subjects(SubjectName, Semester, CurrentType, Credit, Pass, UserID, Grade)" + 
+                " VALUES( @SubjectName, @Semester, @CurrentType, @Credit, @Pass, @UserID, @Grade)", connection);
             command.Parameters.AddWithValue("@SubjectName",subject.SubjectName);
             command.Parameters.AddWithValue("@Semester", subject.Semester);
             command.Parameters.AddWithValue("@CurrentType", subject.CurrentType);
             command.Parameters.AddWithValue("@Credit", subject.Credit);
             command.Parameters.AddWithValue("@Pass", subject.Pass);
             command.Parameters.AddWithValue("@UserID", Student.UserID);
+            command.Parameters.AddWithValue("@Grade", subject.Grade);
+
 
             connection.Open();
             command.ExecuteNonQuery();
