@@ -19,7 +19,7 @@ namespace CreditManager
         public LoginForm()
         {
             InitializeComponent();
-
+            
         }
 
         MainForm mainForm = new MainForm();
@@ -110,6 +110,22 @@ namespace CreditManager
             }
         }
 
-        
+        private void SignUp_Click(object sender, EventArgs e)
+        {
+            if (SignUp.Text == "Sign up")
+            {
+                SignUp.Text = "Sign in";
+                SchoolTextBox.Enabled = true;
+                SignInButton.Enabled = false;
+                RegisterButton.Enabled = true;
+            }
+            else
+            {
+                SignUp.Text = "Sign up";
+                SchoolTextBox.Enabled = false;
+                SignInButton.Enabled = true;
+                RegisterButton.Enabled = false;
+            }
+        }
     }
 }

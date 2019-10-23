@@ -41,6 +41,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.SignUp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -53,9 +54,9 @@
             this.UserNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UserNameTextBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameTextBox.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.UserNameTextBox.Location = new System.Drawing.Point(50, 83);
+            this.UserNameTextBox.Location = new System.Drawing.Point(50, 87);
             this.UserNameTextBox.Name = "UserNameTextBox";
-            this.UserNameTextBox.Size = new System.Drawing.Size(120, 15);
+            this.UserNameTextBox.Size = new System.Drawing.Size(140, 15);
             this.UserNameTextBox.TabIndex = 0;
             this.UserNameTextBox.Tag = "";
             // 
@@ -104,6 +105,7 @@
             // RegisterButton
             // 
             this.RegisterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.RegisterButton.Enabled = false;
             this.RegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RegisterButton.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.RegisterButton.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -124,7 +126,7 @@
             this.PasswordTextBox.Location = new System.Drawing.Point(50, 145);
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.PasswordChar = '*';
-            this.PasswordTextBox.Size = new System.Drawing.Size(120, 15);
+            this.PasswordTextBox.Size = new System.Drawing.Size(140, 15);
             this.PasswordTextBox.TabIndex = 1;
             this.PasswordTextBox.Tag = "";
             // 
@@ -132,13 +134,15 @@
             // 
             this.SchoolTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.SchoolTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SchoolTextBox.Enabled = false;
             this.SchoolTextBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SchoolTextBox.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.SchoolTextBox.Location = new System.Drawing.Point(50, 203);
             this.SchoolTextBox.Name = "SchoolTextBox";
-            this.SchoolTextBox.Size = new System.Drawing.Size(120, 15);
+            this.SchoolTextBox.Size = new System.Drawing.Size(140, 15);
             this.SchoolTextBox.TabIndex = 2;
             this.SchoolTextBox.Tag = "";
+            this.SchoolTextBox.Text = "Dunaújvárosi Egyetem";
             // 
             // bunifuSeparator3
             // 
@@ -194,12 +198,26 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // SignUp
+            // 
+            this.SignUp.AutoSize = true;
+            this.SignUp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SignUp.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.SignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.SignUp.Location = new System.Drawing.Point(175, 5);
+            this.SignUp.Name = "SignUp";
+            this.SignUp.Size = new System.Drawing.Size(43, 14);
+            this.SignUp.TabIndex = 14;
+            this.SignUp.Text = "Sign up";
+            this.SignUp.Click += new System.EventHandler(this.SignUp_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(220, 350);
+            this.Controls.Add(this.SignUp);
             this.Controls.Add(this.SchoolTextBox);
             this.Controls.Add(this.bunifuSeparator3);
             this.Controls.Add(this.pictureBox3);
@@ -240,5 +258,6 @@
         private System.Windows.Forms.TextBox SchoolTextBox;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label SignUp;
     }
 }
