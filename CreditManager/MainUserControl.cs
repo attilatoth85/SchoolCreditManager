@@ -25,12 +25,22 @@ namespace CreditManager
 
         public MainUserControl()
         {
-            InitializeComponent();
+            InitializeComponent();          
+
+        }
+
+        private void MainUserControl_Load(object sender, EventArgs e)
+        {
+            SetCredit();
+            SetPassedNumber();
+            SetRequiredPassed();
+            SetSpecialistPassed();
+            SetOptionalPassed();
+
             SetSemestersValues();
-            chart1.Titles.Add("Subjects in Semesters");            
+            chart1.Titles.Add("Subjects in Semesters");
 
-
-            chart1.Series["Optional"].Points.AddXY("1", s1r);            
+            chart1.Series["Optional"].Points.AddXY("1", s1r);
             chart1.Series["Specialist"].Points.AddXY("1", s1s);
             chart1.Series["Required"].Points.AddXY("1", s1o);
 
@@ -57,9 +67,6 @@ namespace CreditManager
             chart1.Series["Optional"].Points.AddXY("7", s7r);
             chart1.Series["Specialist"].Points.AddXY("7", s7s);
             chart1.Series["Required"].Points.AddXY("7", s7o);
-
-           
-
         }
 
         private void SetSemestersValues()
@@ -103,14 +110,7 @@ namespace CreditManager
         }
 
 
-        private void MainUserControl_Load(object sender, EventArgs e)
-        {
-            SetCredit();
-            SetPassedNumber();
-            SetRequiredPassed();
-            SetSpecialistPassed();
-            SetOptionalPassed();
-        }
+        
 
         private void SetOptionalPassed()
         {

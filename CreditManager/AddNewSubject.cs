@@ -26,7 +26,7 @@ namespace CreditManager
         }
 
         
-
+        
         public void CreateSubjectButton_Click(object sender, EventArgs e)
         {
 

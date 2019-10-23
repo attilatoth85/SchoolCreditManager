@@ -202,6 +202,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\calendar_26px.png" />
+    <None Include="Resources\average_value_80px.png" />
+    <None Include="Resources\settings_50px.png" />
+    <None Include="Resources\unnamed.png" />
+    <None Include="Resources\icon.png" />
+    <None Include="Resources\moodle-icon-27.jpg.png" />
+    <None Include="Resources\duf_logo.bmp" />
+    <None Include="Resources\untitled.png" />
     <Content Include="Scripts\Chart.js" />
     <Content Include="Scripts\Chart.min.js" />
     <None Include="Resources\building_30px.png" />

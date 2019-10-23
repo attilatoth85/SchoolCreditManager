@@ -32,6 +32,12 @@
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.SignOut = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pbMoodle = new System.Windows.Forms.PictureBox();
+            this.pbNeptun = new System.Windows.Forms.PictureBox();
+            this.BtnSetup = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.BtnCalendar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.BtnAverages = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.viewPointer = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.lblSchoolName = new System.Windows.Forms.Label();
             this.lblWelcomeName = new System.Windows.Forms.Label();
@@ -43,11 +49,12 @@
             this.Exit = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.viewPointer = new System.Windows.Forms.Panel();
-            this.mainUserControl2 = new CreditManager.MainUserControl();
             this.addNewSubject1 = new CreditManager.AddNewSubject();
+            this.mainUserControl2 = new CreditManager.MainUserControl();
             this.bunifuGradientPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMoodle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNeptun)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
@@ -91,6 +98,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.panel2.Controls.Add(this.pbMoodle);
+            this.panel2.Controls.Add(this.pbNeptun);
+            this.panel2.Controls.Add(this.BtnSetup);
+            this.panel2.Controls.Add(this.BtnCalendar);
+            this.panel2.Controls.Add(this.BtnAverages);
             this.panel2.Controls.Add(this.viewPointer);
             this.panel2.Controls.Add(this.bunifuSeparator1);
             this.panel2.Controls.Add(this.lblSchoolName);
@@ -103,6 +115,146 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(175, 420);
             this.panel2.TabIndex = 7;
+            // 
+            // pbMoodle
+            // 
+            this.pbMoodle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbMoodle.Image = global::CreditManager.Properties.Resources.duf_logo;
+            this.pbMoodle.Location = new System.Drawing.Point(138, 386);
+            this.pbMoodle.Name = "pbMoodle";
+            this.pbMoodle.Size = new System.Drawing.Size(22, 22);
+            this.pbMoodle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMoodle.TabIndex = 25;
+            this.pbMoodle.TabStop = false;
+            this.pbMoodle.Click += new System.EventHandler(this.pbMoodle_Click);
+            // 
+            // pbNeptun
+            // 
+            this.pbNeptun.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbNeptun.Image = global::CreditManager.Properties.Resources.icon;
+            this.pbNeptun.Location = new System.Drawing.Point(101, 386);
+            this.pbNeptun.Name = "pbNeptun";
+            this.pbNeptun.Size = new System.Drawing.Size(22, 22);
+            this.pbNeptun.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbNeptun.TabIndex = 24;
+            this.pbNeptun.TabStop = false;
+            this.pbNeptun.Click += new System.EventHandler(this.pbNeptun_Click);
+            // 
+            // BtnSetup
+            // 
+            this.BtnSetup.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnSetup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSetup.BorderRadius = 0;
+            this.BtnSetup.ButtonText = "   Setup";
+            this.BtnSetup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSetup.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnSetup.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BtnSetup.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnSetup.Iconimage = global::CreditManager.Properties.Resources.settings_50px;
+            this.BtnSetup.Iconimage_right = null;
+            this.BtnSetup.Iconimage_right_Selected = null;
+            this.BtnSetup.Iconimage_Selected = null;
+            this.BtnSetup.IconMarginLeft = 0;
+            this.BtnSetup.IconMarginRight = 0;
+            this.BtnSetup.IconRightVisible = true;
+            this.BtnSetup.IconRightZoom = 0D;
+            this.BtnSetup.IconVisible = true;
+            this.BtnSetup.IconZoom = 42D;
+            this.BtnSetup.IsTab = false;
+            this.BtnSetup.Location = new System.Drawing.Point(0, 265);
+            this.BtnSetup.Name = "BtnSetup";
+            this.BtnSetup.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnSetup.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.BtnSetup.OnHoverTextColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnSetup.selected = false;
+            this.BtnSetup.Size = new System.Drawing.Size(160, 30);
+            this.BtnSetup.TabIndex = 23;
+            this.BtnSetup.Text = "   Setup";
+            this.BtnSetup.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSetup.Textcolor = System.Drawing.Color.WhiteSmoke;
+            this.BtnSetup.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSetup.Click += new System.EventHandler(this.BtnSetup_Click);
+            // 
+            // BtnCalendar
+            // 
+            this.BtnCalendar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnCalendar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnCalendar.BorderRadius = 0;
+            this.BtnCalendar.ButtonText = "   Calendar";
+            this.BtnCalendar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCalendar.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnCalendar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BtnCalendar.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnCalendar.Iconimage = global::CreditManager.Properties.Resources.calendar_26px;
+            this.BtnCalendar.Iconimage_right = null;
+            this.BtnCalendar.Iconimage_right_Selected = null;
+            this.BtnCalendar.Iconimage_Selected = null;
+            this.BtnCalendar.IconMarginLeft = 0;
+            this.BtnCalendar.IconMarginRight = 0;
+            this.BtnCalendar.IconRightVisible = true;
+            this.BtnCalendar.IconRightZoom = 0D;
+            this.BtnCalendar.IconVisible = true;
+            this.BtnCalendar.IconZoom = 42D;
+            this.BtnCalendar.IsTab = false;
+            this.BtnCalendar.Location = new System.Drawing.Point(0, 229);
+            this.BtnCalendar.Name = "BtnCalendar";
+            this.BtnCalendar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnCalendar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.BtnCalendar.OnHoverTextColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnCalendar.selected = false;
+            this.BtnCalendar.Size = new System.Drawing.Size(160, 30);
+            this.BtnCalendar.TabIndex = 22;
+            this.BtnCalendar.Text = "   Calendar";
+            this.BtnCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCalendar.Textcolor = System.Drawing.Color.WhiteSmoke;
+            this.BtnCalendar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCalendar.Click += new System.EventHandler(this.BtnCalendar_Click);
+            // 
+            // BtnAverages
+            // 
+            this.BtnAverages.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnAverages.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnAverages.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAverages.BorderRadius = 0;
+            this.BtnAverages.ButtonText = "   Averages";
+            this.BtnAverages.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAverages.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnAverages.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BtnAverages.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnAverages.Iconimage = global::CreditManager.Properties.Resources.average_value_80px;
+            this.BtnAverages.Iconimage_right = null;
+            this.BtnAverages.Iconimage_right_Selected = null;
+            this.BtnAverages.Iconimage_Selected = null;
+            this.BtnAverages.IconMarginLeft = 0;
+            this.BtnAverages.IconMarginRight = 0;
+            this.BtnAverages.IconRightVisible = true;
+            this.BtnAverages.IconRightZoom = 0D;
+            this.BtnAverages.IconVisible = true;
+            this.BtnAverages.IconZoom = 47D;
+            this.BtnAverages.IsTab = false;
+            this.BtnAverages.Location = new System.Drawing.Point(0, 193);
+            this.BtnAverages.Name = "BtnAverages";
+            this.BtnAverages.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnAverages.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.BtnAverages.OnHoverTextColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnAverages.selected = false;
+            this.BtnAverages.Size = new System.Drawing.Size(160, 30);
+            this.BtnAverages.TabIndex = 21;
+            this.BtnAverages.Text = "   Averages";
+            this.BtnAverages.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAverages.Textcolor = System.Drawing.Color.WhiteSmoke;
+            this.BtnAverages.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAverages.Click += new System.EventHandler(this.BtnAverages_Click);
+            // 
+            // viewPointer
+            // 
+            this.viewPointer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.viewPointer.Location = new System.Drawing.Point(160, 121);
+            this.viewPointer.Name = "viewPointer";
+            this.viewPointer.Size = new System.Drawing.Size(5, 29);
+            this.viewPointer.TabIndex = 20;
             // 
             // bunifuSeparator1
             // 
@@ -121,7 +273,7 @@
             this.lblSchoolName.AutoSize = true;
             this.lblSchoolName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblSchoolName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.lblSchoolName.Location = new System.Drawing.Point(5, 68);
+            this.lblSchoolName.Location = new System.Drawing.Point(5, 90);
             this.lblSchoolName.Name = "lblSchoolName";
             this.lblSchoolName.Size = new System.Drawing.Size(61, 19);
             this.lblSchoolName.TabIndex = 12;
@@ -285,13 +437,13 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // viewPointer
+            // addNewSubject1
             // 
-            this.viewPointer.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.viewPointer.Location = new System.Drawing.Point(160, 121);
-            this.viewPointer.Name = "viewPointer";
-            this.viewPointer.Size = new System.Drawing.Size(5, 30);
-            this.viewPointer.TabIndex = 20;
+            this.addNewSubject1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.addNewSubject1.Location = new System.Drawing.Point(171, 51);
+            this.addNewSubject1.Name = "addNewSubject1";
+            this.addNewSubject1.Size = new System.Drawing.Size(526, 399);
+            this.addNewSubject1.TabIndex = 13;
             // 
             // mainUserControl2
             // 
@@ -300,14 +452,6 @@
             this.mainUserControl2.Name = "mainUserControl2";
             this.mainUserControl2.Size = new System.Drawing.Size(529, 399);
             this.mainUserControl2.TabIndex = 12;
-            // 
-            // addNewSubject1
-            // 
-            this.addNewSubject1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.addNewSubject1.Location = new System.Drawing.Point(171, 51);
-            this.addNewSubject1.Name = "addNewSubject1";
-            this.addNewSubject1.Size = new System.Drawing.Size(526, 399);
-            this.addNewSubject1.TabIndex = 13;
             // 
             // MainForm
             // 
@@ -327,6 +471,8 @@
             this.bunifuGradientPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMoodle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNeptun)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).EndInit();
@@ -355,6 +501,11 @@
         private AddNewSubject addNewSubject1;
         private MainUserControl mainUserControl2;
         private System.Windows.Forms.Label SignOut;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnSetup;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnCalendar;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnAverages;
+        private System.Windows.Forms.PictureBox pbMoodle;
+        private System.Windows.Forms.PictureBox pbNeptun;
     }
 }
 

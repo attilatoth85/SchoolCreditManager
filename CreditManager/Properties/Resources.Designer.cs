@@ -63,6 +63,16 @@ namespace CreditManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap average_value_80px {
+            get {
+                object obj = ResourceManager.GetObject("average_value_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bank_building_100px {
             get {
                 object obj = ResourceManager.GetObject("bank_building_100px", resourceCulture);
@@ -93,6 +103,16 @@ namespace CreditManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar_26px {
+            get {
+                object obj = ResourceManager.GetObject("calendar_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete_sign_50px {
             get {
                 object obj = ResourceManager.GetObject("delete_sign_50px", resourceCulture);
@@ -106,6 +126,16 @@ namespace CreditManager.Properties {
         internal static System.Drawing.Bitmap delete_sign_filled_50px {
             get {
                 object obj = ResourceManager.GetObject("delete_sign_filled_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap duf_logo {
+            get {
+                object obj = ResourceManager.GetObject("duf_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,6 +183,16 @@ namespace CreditManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon {
+            get {
+                object obj = ResourceManager.GetObject("icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lock_2_50px {
             get {
                 object obj = ResourceManager.GetObject("lock_2_50px", resourceCulture);
@@ -166,6 +206,16 @@ namespace CreditManager.Properties {
         internal static System.Drawing.Bitmap menu_filled_50px {
             get {
                 object obj = ResourceManager.GetObject("menu_filled_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap moodle_icon_27_jpg {
+            get {
+                object obj = ResourceManager.GetObject("moodle-icon-27.jpg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +243,39 @@ namespace CreditManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap settings_50px {
+            get {
+                object obj = ResourceManager.GetObject("settings_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap student_center_30px {
             get {
                 object obj = ResourceManager.GetObject("student_center_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed {
+            get {
+                object obj = ResourceManager.GetObject("unnamed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap untitled {
+            get {
+                object obj = ResourceManager.GetObject("untitled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
